@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+section{
+    width: 60%;
+    height: 10vh;
+    background: linear-gradient(to bottom, #cc66ff );
+}
+.box
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 250px;
+    background: transparent;
+    border-bottom: 0px solid #000;
+    border-left: 0px solid #000;
+    display: flex;
+}
+.box .skill
+{
+    position: relative;
+    flex: 1;
+    text-align: right;
+
+}
+.box .skill .graph
+{
+    position: absolute;
+    width: 20px;
+    background: rgb(163, 67, 207);
+    padding-top: 20px;
+    bottom: 0;
+    left: 60%;
+    transform: translate(-60%);
+}
+.box .skill .graph:before
+{
+content: '';
+position: absolute;
+top: 4px;
+left: 1px;
+right: 2px;
+bottom: 0;
+background: linear-gradient(to bottom, #ab45d3 100%);
+}
+.box .skill .graph:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.box .skill .graph .percent
+{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(50%);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+
+}
+.box .skill .name
+{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-30%);
+    text-align: left;
+    color: #0e0d0d;
+    
+    padding: 2px 6px;
+    border-radius: 4px;
+}
